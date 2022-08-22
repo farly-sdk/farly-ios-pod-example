@@ -1,0 +1,16 @@
+PODS:
+  - Farly (0.0.1-alpha.1)
+
+DEPENDENCIES:
+  - Farly (~> 0.0.1-alpha)
+
+SPEC REPOS:
+  trunk:
+    - Farly
+
+SPEC CHECKSUMS:
+  Farly: 3fd522d2600c00ec6c0b63ea131ee3a34b6e687e
+
+PODFILE CHECKSUM: d818f5d3fc0acf378ff91245d6f15825ad727f1b
+
+COCOAPODS: 1.11.3

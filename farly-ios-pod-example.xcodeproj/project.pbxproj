@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EDB5C44A56168782B9125A6 /* Pods_farly_ios_pod_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B791A4D06FC58BF8235AA3 /* Pods_farly_ios_pod_example.framework */; };
 		3070670D28B3C7E30058EF22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070670C28B3C7E30058EF22 /* AppDelegate.swift */; };
 		3070670F28B3C7E30058EF22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070670E28B3C7E30058EF22 /* SceneDelegate.swift */; };
 		3070671128B3C7E30058EF22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070671028B3C7E30058EF22 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7ADA5EEA4B52CFBFC44CE8 /* Pods-farly-ios-pod-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farly-ios-pod-example.debug.xcconfig"; path = "Target Support Files/Pods-farly-ios-pod-example/Pods-farly-ios-pod-example.debug.xcconfig"; sourceTree = "<group>"; };
+		2854F561149CFC4BF06BE548 /* Pods-farly-ios-pod-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farly-ios-pod-example.release.xcconfig"; path = "Target Support Files/Pods-farly-ios-pod-example/Pods-farly-ios-pod-example.release.xcconfig"; sourceTree = "<group>"; };
 		3070670928B3C7E30058EF22 /* farly-ios-pod-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "farly-ios-pod-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3070670C28B3C7E30058EF22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3070670E28B3C7E30058EF22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		3070671528B3C7E40058EF22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3070671828B3C7E40058EF22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3070671A28B3C7E40058EF22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B791A4D06FC58BF8235AA3 /* Pods_farly_ios_pod_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_farly_ios_pod_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EDB5C44A56168782B9125A6 /* Pods_farly_ios_pod_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219A3774EA6C6329F156D452 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C7ADA5EEA4B52CFBFC44CE8 /* Pods-farly-ios-pod-example.debug.xcconfig */,
+				2854F561149CFC4BF06BE548 /* Pods-farly-ios-pod-example.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3070670028B3C7E30058EF22 = {
 			isa = PBXGroup;
 			children = (
 				3070670B28B3C7E30058EF22 /* farly-ios-pod-example */,
 				3070670A28B3C7E30058EF22 /* Products */,
+				219A3774EA6C6329F156D452 /* Pods */,
+				40F5E33ECFEABA992D2B0068 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "farly-ios-pod-example";
 			sourceTree = "<group>";
 		};
+		40F5E33ECFEABA992D2B0068 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7B791A4D06FC58BF8235AA3 /* Pods_farly_ios_pod_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3070671D28B3C7E40058EF22 /* Build configuration list for PBXNativeTarget "farly-ios-pod-example" */;
 			buildPhases = (
+				986039B65912E0B7315C8CE2 /* [CP] Check Pods Manifest.lock */,
 				3070670528B3C7E30058EF22 /* Sources */,
 				3070670628B3C7E30058EF22 /* Frameworks */,
 				3070670728B3C7E30058EF22 /* Resources */,
+				69D95F6DFAD36EE2628235FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69D95F6DFAD36EE2628235FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-farly-ios-pod-example/Pods-farly-ios-pod-example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-farly-ios-pod-example/Pods-farly-ios-pod-example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-farly-ios-pod-example/Pods-farly-ios-pod-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		986039B65912E0B7315C8CE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-farly-ios-pod-example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3070670528B3C7E30058EF22 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3070671E28B3C7E40058EF22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7ADA5EEA4B52CFBFC44CE8 /* Pods-farly-ios-pod-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		3070671F28B3C7E40058EF22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2854F561149CFC4BF06BE548 /* Pods-farly-ios-pod-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
