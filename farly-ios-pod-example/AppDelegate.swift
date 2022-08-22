@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Farly.shared.apiKey = "API_KEY"
         Farly.shared.publisherId = "PUB_ID"
-        Farly.shared.apiDomain = "www.mob4pass.com" // optional, only if you have a specific one
         
         //TODO: add your own apiKey and publisherId
         Farly.shared.apiKey = ""
