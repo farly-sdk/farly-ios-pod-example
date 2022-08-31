@@ -6,5 +6,5 @@ target 'farly-ios-pod-example' do
   use_frameworks!
 
   # Pods for farly-ios-pod-example
-  pod 'Farly', '~> 0.0.1-alpha'
+  pod 'Farly', '~> 0.0.1-alpha.4'
 end

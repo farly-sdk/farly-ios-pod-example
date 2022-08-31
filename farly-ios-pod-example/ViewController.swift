@@ -10,7 +10,7 @@ import Farly
 import AppTrackingTransparency
 
 class ViewController: UIViewController {
-
+    
     lazy var request: OfferWallRequest = {
         let request = OfferWallRequest(userId: "YOUR_USER_ID")
         
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
     @IBAction func onAskForOffers(_ sender: Any) {
         Farly.shared.getOfferWall(request: request) { error, offers in
             if let error = error {
@@ -50,11 +50,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onTapOpenWallInBrowser(_ sender: Any) {
-        Farly.shared.showOfferwall(request: request, mode: .browser)
+        Farly.shared.showOfferwallInBrowser(request: request, completion: { error in
+            if let error = error {
+                print("Could not open offerwall in browser: \(error)")
+                return
+            }
+            print("Successfully opened offerwall in browser")
+        })
     }
     
     @IBAction func onTapOpenWallInApp(_ sender: Any) {
-        Farly.shared.showOfferwall(request: request, mode: .webView)
+        Farly.shared.showOfferwallInWebview(request: request) { error in
+            if let error = error {
+                print("Could not open offerwall in webView: \(error)")
+                return
+            }
+            print("Successfully opened offerwall in webView")
+        }
     }
-
 }
